@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #mah{
+            width: 30%;
+            height: 50px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <div class="head">
+            <img src="pngtree-maharana-pratap-jayanti-colorful-hand-drawing-png-design-png-image_7599734.png" alt="" id="mah">
+            <audio id="way">
+                <source src="/y2mate.com - Maro Mewadi Sardar _Maharana Pratap Singh.mp3" type="audio/mp3">
+            </audio>
+         
+        </div>
+    </div>
+    <script>
+        var mysong= document.getElementById("way");
+        var icon = document.getElementById("icon");
+        icon.onclick=function(){
+            // mysong.play();
+            if(mysong.paused){
+                mysong.play();
+                icon.src = "img/pause.png";
+            }
+            else{
+                mysong.pause();
+                icon.src="img/pause-button-png-29664 (1).png";
+            }
+        }
+    </script>
+</body>
+</html>
